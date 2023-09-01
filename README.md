@@ -10,7 +10,12 @@ That is when I thought of creating this repository to solve these problems. It w
 - Via your open source contributions, you can improve your github profile (get badges, increase pull request count and more).
 
 ## How you can give back 🤝🏻: 
+<i>Please star the repository</i> ⭐. <br> <br>
 This idea and repository can only thrive with the help of the community. I can only do so much myself and once I pass out, it will be upto the college students to maintain it. I urge and request everyone to contribute to this repo with the papers you have at present so that we can keep it up and running for our upcoming juniors.
 
 ## How to contribute (☞ﾟヮﾟ)☞ :
-
+1. You have a question paper and are willing to contribute. 
+2. Make a single PDF file of all the pages.
+3. File naming scheme: <i> <Exam_Name>  <Acronym_of_Subject></i>
+<br>Eg: For a T1 examination paper of Data Structures, file name would be <i>T1_DS.pdf</i>
+4. Fork this repository 
