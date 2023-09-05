@@ -10,7 +10,7 @@ That is when I thought of creating this repository to solve these problems. It w
 - Via your open source contributions, you can improve your github profile (get badges, increase pull request count and more).
 
 ## How you can give back 🤝🏻: 
-<i>Please star the repository</i> ⭐. <br> <br>
+### <i>Please star the repository</i> ⭐. <br> <br>
 This idea and repository can only thrive with the help of the community. I can only do so much myself and once I pass out, it will be upto the college students to maintain it. I urge and request everyone to contribute to this repo with the papers you have at present so that we can keep it up and running for our upcoming juniors.
 
 ## How to contribute (☞ﾟヮﾟ)☞ :
@@ -21,12 +21,22 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
 3. File naming scheme: <i> <Exam_Name>  <Acronym_of_Subject></i>
 <br>Eg: For a T1 examination paper of Data Structures, file name would be <i>T1_DS.pdf</i>
 4. Fork this repository.
+   <br> Steps 5-14 are commands that have to be run on Git Bash.
 5. Clone the repository by running:
-   <br><i> git clone <url_of_your_fork> </i>.
+   <br><i> git clone <url_of_your_fork> </i>
 6. Change the directory to "JUET-Past-Year-s-Papers" by running:
    <br><i> cd JUET-Past-Year-s-Papers </i>
 7. Add a new upstream repo that will be synced with the fork. Run :
    <br> _git remote add upstream https://github.com/VinayakRaoDikshit/JUET-Past-Year-s-Papers.git_
 8. Create a a new branch on your local and switch to it using:
-   <br> 
-10.
+   <br> _git checkout -b <branch_name>_
+10. Add your PDF file to the appropriate folder.
+11. Add your file to the staging area by running :
+    <br>_git add -A_
+12. Commit your changes by running :
+    <br> _git commit -m "your commit message"_
+13. Push your branch to the remote repository :
+    <br>_git push origin <branch_name>:<branch_name>_
+14. Set up tracking for the new branch. Run:
+    <br> _git branch -u origin/<branch_name>_
+15. Create a pull request on Github.
