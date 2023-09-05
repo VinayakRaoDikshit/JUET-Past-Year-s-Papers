@@ -40,3 +40,9 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
 14. Set up tracking for the new branch. Run:
     <br> _git branch -u origin/<branch_name>_
 15. Create a pull request on Github.
+
+<br> Here are all the steps mentioned above, in action:<br>
+<img src="" alt="Step guide">
+
+
+
