@@ -41,8 +41,11 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     <br> _git branch -u origin/<branch_name>_
 15. Create a pull request on Github.
 
-<br> Here are all the steps mentioned above, in action:<br>
-<img src="" alt="Step guide">
+<br> Here are all the steps mentioned above, in action:<br><br>
+<img width=75% src="Images/One.png" alt="Step guide">
+<br><br>
+<img width=75% src="Images/Two.png" alt="Step guide">
+
 
 
 
