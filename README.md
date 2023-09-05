@@ -23,23 +23,39 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
 4. Fork this repository.
    <br> Steps 5-14 are commands that have to be run on Git Bash.
 5. Clone the repository by running:
-   <br><i> git clone <url_of_your_fork> </i>
-6. Change the directory to "JUET-Past-Year-s-Papers" by running:
-   <br><i> cd JUET-Past-Year-s-Papers </i>
-7. Add a new upstream repo that will be synced with the fork. Run :
-   <br> _git remote add upstream https://github.com/VinayakRaoDikshit/JUET-Past-Year-s-Papers.git_
-8. Create a a new branch on your local and switch to it using:
-   <br> _git checkout -b <branch_name>_
-10. Add your PDF file to the appropriate folder.
-11. Add your file to the staging area by running :
-    <br>_git add -A_
-12. Commit your changes by running :
-    <br> _git commit -m "your commit message"_
-13. Push your branch to the remote repository :
-    <br>_git push origin <branch_name>:<branch_name>_
-14. Set up tracking for the new branch. Run:
-    <br> _git branch -u origin/<branch_name>_
-15. Create a pull request on Github.
+   ```
+   git clone <url_of_your_fork>
+   ``` 
+7. Change the directory to "JUET-Past-Year-s-Papers" by running:
+   ```
+   cd JUET-Past-Year-s-Papers
+   ``` 
+9. Add a new upstream repo that will be synced with the fork. Run :
+    ```
+   git remote add upstream https://github.com/VinayakRaoDikshit/JUET-Past-Year-s-Papers.git
+    ```
+11. Create a a new branch on your local and switch to it using:
+    ```
+    git checkout -b <branch_name>
+    ```
+13. Add your PDF file to the appropriate folder.
+14. Add your file to the staging area by running :
+    ```
+    git add -A
+    ```
+16. Commit your changes by running :
+    ```
+     git commit -m "your commit message
+    ```
+17. Push your branch to the remote repository :
+    ```
+    git push origin <branch_name>:<branch_name>_
+    ```
+18. Set up tracking for the new branch. Run:
+    ```
+    git branch -u origin/<branch_name>
+    ```
+19. Create a pull request on Github.
 
 <br> Here are all the steps mentioned above, in action:<br><br>
 <img width=75% src="Images/One.png" alt="Step guide">
