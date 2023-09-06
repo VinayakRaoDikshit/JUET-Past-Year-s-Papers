@@ -39,7 +39,7 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     git checkout -b <branch_name>
     ```
 13. Add your PDF file to the appropriate folder. Question papers in this repo are arranged in folders which follow a specific hierarchy as shown below. If you're creating a new folder, make sure it stick to the guidelines.
-    <br><br><img width=75% src="Images/Three.png" alt="folder hierarchy"> 
+    <br><br><img width=75% src="Images/three.png" alt="folder hierarchy"> 
 15. Add your file to the staging area by running :
     ```
     git add -A
