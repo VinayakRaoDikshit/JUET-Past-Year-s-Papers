@@ -1,0 +1,37 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on pull request events but only for the "main" branch
+  pull_request:
+    branches: [ "main" ]
+    types: 
+          opened
+          synchronize
+    
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "name_check"
+  name_check:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: ChecksOut repository  
+      # name field gives a name to this particular github action. Its name gives insight to what the action does and makes it easier to identify it in logs 
+        uses: actions/checkout@v3
+
+       # the hyphen (-) at the beginning of the configuration denotes that it's a list item in a YAML sequence. Each list item represents a step in the GitHub Actions workflow.#
+      
+      - name: Validating folder and file names
+        run: python validateNaming.py
+
+      - name: Merge pull request
+        if: success()
+        #run: 
