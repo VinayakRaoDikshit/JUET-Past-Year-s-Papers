@@ -38,7 +38,7 @@ def check_naming_conventions(root_dir):
             file_count += 1
             # with open("counts.txt", "w") as count_file:
             #  count_file.write(f"File: {os.path.join(root, file)}\n")
-    if(file_count>=file_count1 and folder_count>=folder_count1):
+    if(file_count>=file_count1 and folder_count>=folder_count1): #Ensuring that no files or folders are deleted. Only added
 
         with open("counts.txt", "w") as count_file:
             count_file.write(f"{folder_count}\n")
@@ -49,7 +49,8 @@ def check_naming_conventions(root_dir):
     return True
 
 if __name__ == "__main__":
-    repository_root = "D:\Vinayak\JUET-Past-Year-s-Papers\CSE"  # Set this to the path of your repository root
+    # repository_root = "D:\Vinayak\JUET-Past-Year-s-Papers\CSE"  # Set this to the path of your repository root
+    repository_root="JUET-Past-Year-s-Papers/Papers"
     if not check_naming_conventions(repository_root):
         print("Naming conventions not met.")
         exit(1)
