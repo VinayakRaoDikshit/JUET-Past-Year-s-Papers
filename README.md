@@ -38,8 +38,11 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     ```
     git checkout -b <branch_name>
     ```
-13. Add your PDF file to the appropriate folder. Question papers in this repo are arranged in folders which follow a specific hierarchy as shown below. If you're creating a new folder, make sure it stick to the guidelines.
-    <br><br><img width=75% src="Images/three.png" alt="folder hierarchy"> 
+13. Add your PDF file to the appropriate folder. Question papers in this repo are arranged in folders which follow a specific hierarchy as shown below. If you're creating a new folder, make sure it sticks to the guidelines.
+    <br> Branches can be in the set : {CSE, ECE, ME, CE, CHE}
+    <br> Exam names can be in the set: {T1, T2, T3}
+    <br> Semesters can be in the range: [Sem I, Sem VIII]
+    <br><br><img  align ="middle" height=200 src="Images/three.png" alt="folder hierarchy"> 
 15. Add your file to the staging area by running :
     ```
     git add -A
@@ -59,7 +62,7 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
 19. Create a pull request on Github.
 
 <br> Here are all the steps mentioned above, in action:<br><br>
-<img width=75% src="Images/One.png" alt="Step guide">
+<img width=75% src="Images/One.png" alt="Step guide" align="middle">
 <br><br>
 <img width=75% src="Images/Two.png" alt="Step guide">
 
