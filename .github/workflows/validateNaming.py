@@ -53,6 +53,7 @@ if __name__ == "__main__":
     # Set this to the path of your repository root
     # repository_root=os.path.join(os.path.dirname(__file__), '..', 'Papers')
     repository_root="Papers"
+    print(repository_root)
     if not check_naming_conventions(repository_root):
         print("Naming conventions not met.")
         exit(1)
