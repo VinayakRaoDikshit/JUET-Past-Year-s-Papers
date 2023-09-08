@@ -30,7 +30,7 @@ jobs:
        # the hyphen (-) at the beginning of the configuration denotes that it's a list item in a YAML sequence. Each list item represents a step in the GitHub Actions workflow.#
       
       - name: Validating folder and file names
-        run: python validateNaming.py
+        run: python .github/workflows/validateNaming.py
 
       - name: Merge pull request
         if: success()

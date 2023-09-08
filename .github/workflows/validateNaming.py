@@ -16,6 +16,7 @@ def check_naming_conventions(root_dir):
     ]
     # ^ and $ anchor the pattern to the start and end of the string, respectively, ensuring that the entire string matches the pattern.
     with open(".github/workflows/counts.txt", "r") as count_file:
+    with open(".github/workflows/counts.txt", "r") as count_file:
         folder_count1 = int(count_file.readline().strip())
         file_count1 = int(count_file.readline().strip())
 
@@ -40,6 +41,7 @@ def check_naming_conventions(root_dir):
             #  count_file.write(f"File: {os.path.join(root, file)}\n")
     if(file_count>=file_count1 and folder_count>=folder_count1): #Ensuring that no files or folders are deleted. Only added
 
+        with open(".github/workflows/counts.txt", "w") as count_file:
         with open(".github/workflows/counts.txt", "w") as count_file:
             count_file.write(f"{folder_count}\n")
             count_file.write(f"{file_count}\n")
