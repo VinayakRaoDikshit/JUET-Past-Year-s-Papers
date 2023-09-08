@@ -32,12 +32,14 @@ jobs:
       - name: Validating folder and file names
         run: python .github/workflows/validateNaming.py
 
-      - name: Merge pull request
-        if: success()
-        run: |
-          gh pr merge ${{ github.event.pull_request.number }} --merge
+      # - name: Merge pull request
+      #   if: success()
+      #   run: |
+      #     gh pr merge ${{ github.event.pull_request.number }} --merge
+          
         # To use GitHub CLI in a GitHub Actions workflow, set the GH_TOKEN environment variable.
-        env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+        # env:
+        #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
          
