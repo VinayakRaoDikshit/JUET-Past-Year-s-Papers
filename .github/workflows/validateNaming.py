@@ -15,7 +15,7 @@ def check_naming_conventions(root_dir):
         r'^Batch 2\d+-2\d+$'
     ]
     # ^ and $ anchor the pattern to the start and end of the string, respectively, ensuring that the entire string matches the pattern.
-    with open("counts.txt", "r") as count_file:
+    with open(".github/workflows/counts.txt", "r") as count_file:
         folder_count1 = int(count_file.readline().strip())
         file_count1 = int(count_file.readline().strip())
 
@@ -27,7 +27,7 @@ def check_naming_conventions(root_dir):
         # for folder in root:
         for folder in dirs:
             if is_valid_folder_name(folder, folder_patterns):
-                # print(folder)
+                print(folder)
                 folder_count += 1
             else:
                 return False    
@@ -40,7 +40,7 @@ def check_naming_conventions(root_dir):
             #  count_file.write(f"File: {os.path.join(root, file)}\n")
     if(file_count>=file_count1 and folder_count>=folder_count1): #Ensuring that no files or folders are deleted. Only added
 
-        with open("counts.txt", "w") as count_file:
+        with open(".github/workflows/counts.txt", "w") as count_file:
             count_file.write(f"{folder_count}\n")
             count_file.write(f"{file_count}\n")
     else:
@@ -49,9 +49,13 @@ def check_naming_conventions(root_dir):
     return True
 
 if __name__ == "__main__":
-    # repository_root = "D:\Vinayak\JUET-Past-Year-s-Papers\CSE"  
+    # repository_root = "D:\Vinayak\JUET-Past-Year-s-Papers\Papers\CSE"  
     # Set this to the path of your repository root
-    repository_root=os.path.join(os.path.dirname(__file__), '..', 'Papers')
+    # current_directory = os.path.dirname(__file__)
+    # repository_root=os.path.join(current_directory, '..', 'papers')
+    # print("cd: ", current_directory)  
+    # print("reporoot: ", repository_root)
+    repository_root="Papers/CSE"
     if not check_naming_conventions(repository_root):
         print("Naming conventions not met.")
         exit(1)
