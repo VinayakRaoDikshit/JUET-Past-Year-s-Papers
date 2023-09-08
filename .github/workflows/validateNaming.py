@@ -51,7 +51,8 @@ def check_naming_conventions(root_dir):
 if __name__ == "__main__":
     # repository_root = "D:\Vinayak\JUET-Past-Year-s-Papers\CSE"  
     # Set this to the path of your repository root
-    repository_root=os.path.join(os.path.dirname(__file__), '..', 'Papers')
+    # repository_root=os.path.join(os.path.dirname(__file__), '..', 'Papers')
+    repository_root="https://github.com/VinayakRaoDikshit/JUET-Past-Year-s-Papers/tree/main/Papers"
     if not check_naming_conventions(repository_root):
         print("Naming conventions not met.")
         exit(1)
