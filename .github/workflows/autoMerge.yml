@@ -35,7 +35,7 @@ jobs:
       - name: Merge pull request
         if: success()
         run: |
-         gh pr merge ${{ github.event.pull_request.number }} --auto
+         gh pr merge ${{ github.event.pull_request.number }} --auto --merge
         # To use GitHub CLI in a GitHub Actions workflow, set the GH_TOKEN environment variable.
         env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
