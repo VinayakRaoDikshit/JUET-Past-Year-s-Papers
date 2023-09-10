@@ -1,5 +1,6 @@
 # JUET-Past-Year-s-Papers
 The dreaded T1, T2, and T3 examination's papers come here to die.
+<br><i>Please star this repository ⭐</i>
 ## About ⚡:
 Up until 2012, our university folks used to maintain an archive of all the exam papers that were held all year around. That's not the case anymore. A week before each exam, I have seen students spending a majority of their time anxiously hunting for previous year's papers from their seniors. However, one couldn't easily get their hands these papers and the students who did, would only circulate it amongst their group, and increasing chances of scorng better.
 
@@ -42,6 +43,7 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     <br> Branches can be in the set : {CSE, ECE, ME, CE, CHE}
     <br> Exam names can be in the set: {T1, T2, T3}
     <br> Semesters can be in the range: [Sem I, Sem VIII]
+    <br> Batch names can be of the form: "Batch 20-24", "Batch 21-25", "Batch 22-26" etc.
     <br><br><img  align ="middle" height=200 src="Images/three.png" alt="folder hierarchy"> 
 15. Add your file to the staging area by running :
     ```
@@ -49,11 +51,11 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     ```
 16. Commit your changes by running :
     ```
-     git commit -m "your commit message
+     git commit -m "your commit message"
     ```
 17. Push your branch to the remote repository :
     ```
-    git push origin <branch_name>:<branch_name>_
+    git push origin <branch_name>:<branch_name>
     ```
 18. Set up tracking for the new branch. Run:
     ```
