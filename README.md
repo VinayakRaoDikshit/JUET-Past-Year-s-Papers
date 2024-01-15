@@ -35,7 +35,7 @@ Some of the stuff below might seem like technical jargon to newbies. So, just be
     ```
    git remote add upstream https://github.com/VinayakRaoDikshit/JUET-Past-Year-s-Papers.git
     ```
-11. Create a a new branch on your local and switch to it using:
+11. Create a new branch on your local and switch to it using:
     ```
     git checkout -b <branch_name>
     ```
